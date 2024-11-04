@@ -68,7 +68,7 @@
         game {
             bindings = <
 &kp ESCAPE  &kp N1  &kp N2  &kp N3  &kp N4                    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9
-&trans      &kp Q   &kp W   &kp E   &kp R   &kp T     &to 1   &tog 6    &mkp MB1  &mkp MB2  &trans    &trans
+&trans      &kp Q   &kp W   &kp E   &kp R   &kp T     &to 1   &tog 5    &mkp MB1  &mkp MB2  &trans    &trans
 &kp TAB     &kp A   &kp S   &kp D   &kp F   &kp G     &trans  &mkp MB3  &trans    &mkp MB4  &mkp MB5  &trans
 &trans      &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans
             >;
@@ -76,7 +76,7 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W             &kp E             &kp R      &kp T                                                &kp Y      &kp U  &lt 6 I    &kp O    &kp P
+&kp Q           &kp W             &kp E             &kp R      &kp T                                                &kp Y      &kp U  &lt 5 I    &kp O    &kp P
 &kp A           &kp S             &kp D             &kp F      &kp G             &kp LS(LG(S))       &tog 0         &kp H      &kp J  &kp K      &kp L    &kp MINUS
 &kp Z           &kp X             &kp C             &kp V      &kp B             &kp COLON           &kp SEMICOLON  &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_SHIFT  &mt LEFT_WIN TAB  &kp LEFT_CONTROL  &kp SPACE  &lt 3 LANGUAGE_1  &lt 2 LANGUAGE_2    &kp BACKSPACE  &kp ENTER                             &kp LEFT_ALT
@@ -103,21 +103,10 @@
             >;
         };
 
-        ARROW {
-            bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                          &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
-        };
-
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mo 6     &mkp MB1  &mkp MB2  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mo 5     &mkp MB1  &mkp MB2  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB3  &trans    &mkp MB4  &mkp MB5  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans
             >;
@@ -130,6 +119,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
+        };
+
+        ARROW {
+            bindings = <
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &trans  &trans  &trans  &trans  &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                          &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         layer_6 {
