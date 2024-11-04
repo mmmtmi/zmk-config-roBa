@@ -46,7 +46,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
     };
@@ -65,24 +65,24 @@
     keymap {
         compatible = "zmk,keymap";
 
-        game {
-            bindings = <
-&kp ESCAPE  &kp N1  &kp N2  &kp N3  &kp N4                    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9
-&trans      &kp Q   &kp W   &kp E   &kp R   &kp T     &to 1   &tog 5    &mkp MB1  &mkp MB2  &trans    &trans
-&kp TAB     &kp A   &kp S   &kp D   &kp F   &kp G     &trans  &mkp MB3  &trans    &mkp MB4  &mkp MB5  &trans
-&trans      &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans
-            >;
-        };
-
         default_layer {
             bindings = <
 &kp Q           &kp W             &kp E             &kp R      &kp T                                                &kp Y      &kp U  &lt 5 I    &kp O    &kp P
-&kp A           &kp S             &kp D             &kp F      &kp G             &kp LS(LG(S))       &tog 0         &kp H      &kp J  &kp K      &kp L    &kp MINUS
+&kp A           &kp S             &kp D             &kp F      &kp G             &kp LS(LG(S))       &to 1          &kp H      &kp J  &kp K      &kp L    &kp MINUS
 &kp Z           &kp X             &kp C             &kp V      &kp B             &kp COLON           &kp SEMICOLON  &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_SHIFT  &mt LEFT_WIN TAB  &kp LEFT_CONTROL  &kp SPACE  &lt 3 LANGUAGE_1  &lt 2 LANGUAGE_2    &kp BACKSPACE  &kp ENTER                             &kp LEFT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+        };
+
+        game {
+            bindings = <
+&kp ESCAPE  &kp N1  &kp N2  &kp N3  &kp N4                    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9
+&trans      &kp Q   &kp W   &kp E   &kp R   &kp T     &to 0   &to 5     &mkp MB1  &mkp MB2  &trans    &trans
+&kp TAB     &kp A   &kp S   &kp D   &kp F   &kp G     &trans  &mkp MB3  &trans    &mkp MB4  &mkp MB5  &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans
+            >;
         };
 
         FUNCTION {
