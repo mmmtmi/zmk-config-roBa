@@ -68,7 +68,7 @@
         default_layer {
             bindings = <
 &kp Q           &kp W             &kp E             &kp R      &kp T                                                &kp Y      &kp U  &lt 5 I    &kp O    &kp P
-&kp A           &kp S             &kp D             &kp F      &kp G             &kp LS(LG(S))       &mo 7          &kp H      &kp J  &kp K      &kp L    &kp MINUS
+&kp A           &kp S             &kp D             &kp F      &kp G             &kp LS(LG(S))       &to 7          &kp H      &kp J  &kp K      &kp L    &kp MINUS
 &kp Z           &kp X             &kp C             &kp V      &kp B             &kp COLON           &kp SEMICOLON  &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_SHIFT  &mt LEFT_WIN TAB  &kp LEFT_CONTROL  &kp SPACE  &lt 2 LANGUAGE_1  &lt 1 LANGUAGE_2    &kp BACKSPACE  &kp ENTER                             &kp LEFT_ALT
             >;
@@ -135,7 +135,7 @@
         game {
             bindings = <
 &kp ESCAPE  &kp N1  &kp N2  &kp N3  &kp N4                    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9
-&trans      &kp Q   &kp W   &kp E   &kp R   &kp T     &mo 0   &mo 5     &mkp MB1  &mkp MB2  &trans    &trans
+&trans      &kp Q   &kp W   &kp E   &kp R   &kp T     &to 0   &mo 5     &mkp MB1  &mkp MB2  &trans    &trans
 &kp TAB     &kp A   &kp S   &kp D   &kp F   &kp G     &trans  &mkp MB3  &trans    &mkp MB4  &mkp MB5  &trans
 &trans      &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans
             >;
