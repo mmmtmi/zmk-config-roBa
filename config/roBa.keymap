@@ -73,7 +73,7 @@
 &kp LEFT_SHIFT  &mt LEFT_WIN TAB  &kp LEFT_CONTROL  &kp SPACE  &lt 3 LANGUAGE_1  &lt 2 LANGUAGE_2    &kp BACKSPACE  &kp ENTER                             &kp LEFT_ALT
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         game {
